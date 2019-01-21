@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https:/https://github.com/OpenCleaner/OpenCleaner/raw/master/logo.png" alt="OpenCleaner" width="200" />
+    <img src="https://github.com/OpenCleaner/OpenCleaner/raw/master/logo.png" alt="OpenCleaner" width="200" />
     <h1>OpenCleaner</h1>
     <a href="https://travis-ci.org/OpenCleaner/OpenCleaner"><img src="https://travis-ci.org/OpenCleaner/OpenCleaner.svg?branch=master"/></a>
     <a href="https://github.com/OpenCleaner/OpenCleaner/releases"><img src="https://img.shields.io/github/release/OpenCleaner/OpenCleaner.svg"/></a>
