@@ -8,19 +8,6 @@ rust:
 script:
   - cargo install --force cargo-make
   - cargo make --makefile Makefile.toml build-all
-stages:
-  - name: "install windows"
-    if: os = windows
-  - name: "install linux"
-    if: os = linux
-    script: echo stage-linux
-  - name: "install osx"
-    if: os = osx
-jobs:
-  include:
-    - stage: install windows
-      script: echo install-windows
-    - stage: install linux
-      script: echo install-linux
-    - stage: install osx
-      script: echo install-osx
+before_install:
+  - echo before install
+  - if [ $TRAVIS_OS_NAME = linux ]; then echo linux; else echo someelse; fi
