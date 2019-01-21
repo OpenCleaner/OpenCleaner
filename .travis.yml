@@ -9,17 +9,18 @@ script:
   - cargo install --force cargo-make
   - cargo make --makefile Makefile.toml build-all
 stages:
-  - name: install_windows
+  - name: "install windows"
     if: os = windows
-  - name: install_linux
+  - name: "install linux"
     if: os = linux
-  - name: install_osx
+    script: echo stage-linux
+  - name: "install osx"
     if: os = osx
 jobs:
   include:
-    - stage: install_windows
+    - stage: install windows
       script: echo install-windows
-    - stage: install_linux
+    - stage: install linux
       script: echo install-linux
-    - stage: install_osx
+    - stage: install osx
       script: echo install-osx
