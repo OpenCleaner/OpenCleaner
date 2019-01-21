@@ -1,0 +1,4 @@
+[tasks.build-all]
+script = [
+    "echo hello"
+]
