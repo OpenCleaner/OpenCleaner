@@ -5,9 +5,8 @@ os:
 language: rust
 rust:
   - nightly
-script:
-  - cargo install --force cargo-make
-  - cargo make --makefile Makefile.toml build-all
 before_install:
-  - echo before install
-  - if [ $TRAVIS_OS_NAME = linux ]; then echo linux; else echo someelse; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then echo linux; else if [ $TRAVIS_OS_NAME = osx ] echo someelse; else echo windows; fi
+  - cargo install --force cargo-make
+script:
+  - cargo make --makefile Makefile.toml build-all
