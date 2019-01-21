@@ -8,3 +8,18 @@ rust:
 script:
   - cargo install --force cargo-make
   - cargo make --makefile Makefile.toml build-all
+stages:
+  - name: install_windows
+    if: os = windows
+  - name: install_linux
+    if: os = linux
+  - name: install_osx
+    if: os = osx
+jobs:
+  include:
+    - stage: install_windows
+      script: echo install-windows
+    - stage: install_linux
+      script: echo install-linux
+    - stage: install_osx
+      script: echo install-osx
