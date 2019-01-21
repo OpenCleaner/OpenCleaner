@@ -6,8 +6,8 @@ language: rust
 rust:
   - nightly
 install:
-  - if [ $TRAVIS_OS_NAME = linux ]; then ./install_linux.sh; fi
-  - if [ $TRAVIS_OS_NAME = osx ]; then ./install_osx.sh; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then chmod +x install_linux.sh && ./install_linux.sh; fi
+  - if [ $TRAVIS_OS_NAME = osx ]; then chmod +x install_osx.sh && ./install_osx.sh; fi
   - if [ $TRAVIS_OS_NAME = windows ]; then install_win.bat; fi
   - cargo install --force cargo-make
 script:
