@@ -10,7 +10,6 @@ Open source and free alternative to CCleaner. System cleaner for windows, linux 
 
 ## Screenshots
 
-> [!CAUTION]
 > coming soon
 
 ## Features

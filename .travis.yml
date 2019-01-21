@@ -4,3 +4,6 @@ rust:
 script:
   - cargo install --force cargo-make
   - cargo make --makefile Makefile.toml build-all
+matrix:
+  include:
+    language: node_js
