@@ -21,10 +21,7 @@ const About = withStyles(styles)(
       return (
         <div className={classes.root}>
           <Typography variant="h4" gutterBottom>
-            Material-UI
-          </Typography>
-          <Typography variant="subtitle1" gutterBottom>
-            with Nextron
+            OpenCleaner
           </Typography>
           <Typography gutterBottom>
             <a href={resolve('home')}>

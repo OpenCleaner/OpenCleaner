@@ -84,3 +84,6 @@ _next/
 
 # Electron
 dist/
+
+# GUI
+packages/open-cleaner/app/
