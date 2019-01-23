@@ -1,1 +1,2 @@
-echo "install windows"
+echo "Installing windows dependencies"
+choco install nodejs
