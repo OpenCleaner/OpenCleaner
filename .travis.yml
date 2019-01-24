@@ -12,3 +12,11 @@ install:
   - cargo install --force cargo-make
 script:
   - cargo make --makefile Makefile.toml build-all
+addons:
+  homebrew:
+    update: true
+    packages:
+    - node
+    - yarn
+  apt:
+    update: true
