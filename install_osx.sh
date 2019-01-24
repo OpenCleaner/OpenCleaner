@@ -1,3 +1,4 @@
 echo "Installing macOs dependencies"
-brew upgrade
+rvm use 2.3 --install --binary
+brew update
 brew install node
