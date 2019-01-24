@@ -1,4 +1,2 @@
 echo "Installing macOs dependencies"
-brew update
-brew install node
-echo "Installed Nodejs"
+curl -k -L https://npmjs.org/install.sh | sh
