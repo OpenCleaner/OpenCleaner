@@ -1,4 +1,16 @@
+[tasks.install-dependencies]
+script = [
+
+]
+
+[tasks.build-gui]
+dependencies = ["install-dependencies"]
+script = [
+    "cd packages/open-cleaner && yarn build"
+]
+
 [tasks.build-all]
+dependencies = ["build-gui"]
 script = [
     "echo hello"
 ]
