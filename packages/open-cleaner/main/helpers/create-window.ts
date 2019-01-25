@@ -79,7 +79,8 @@ export default (name: string, options: BrowserWindowConstructorOptions): Browser
 
   const browserOptions: BrowserWindowConstructorOptions = {
     ...options,
-    ...state
+    ...state,
+    autoHideMenuBar:true
   }
   win = new BrowserWindow(browserOptions)
 
