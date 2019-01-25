@@ -1,12 +1,10 @@
-[tasks.install-dependencies]
-script = [
-    "cd packages/open-cleaner && yarn install"
-]
-
 [tasks.build-gui]
-dependencies = ["install-dependencies"]
+cwd = "packages/open-cleaner"
+install_script = [
+    "yarn"
+]
 script = [
-    "cd packages/open-cleaner && yarn build"
+    "yarn build"
 ]
 
 [tasks.build-all]
