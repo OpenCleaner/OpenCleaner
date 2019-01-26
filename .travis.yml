@@ -16,8 +16,5 @@ script:
 addons:
   homebrew:
     update: true
-    packages:
-    - node
-    - yarn
   apt:
     update: true
