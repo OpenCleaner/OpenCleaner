@@ -1,9 +1,7 @@
 [tasks.build-gui]
 cwd = "packages/open-cleaner"
-install_script = [
-    "yarn"
-]
 script = [
+    "yarn",
     "yarn build"
 ]
 
