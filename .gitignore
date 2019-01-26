@@ -87,3 +87,5 @@ dist/
 
 # GUI
 packages/open-cleaner/app/
+
+yarn.lock
