@@ -1,6 +1,6 @@
 echo "Installing windows dependencies"
-choco install nodejs
-choco install yarn
-refreshenv
+powershell choco install nodejs
+powershell choco install yarn
+powershell refreshenv
 echo "Running on node version"
-node --version
+powershell node --version
