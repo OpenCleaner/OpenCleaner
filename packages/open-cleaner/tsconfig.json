@@ -8,7 +8,15 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "jsx": "react",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "@common/*": ["common/*"],
+      "@renderer/*": ["renderer/*"],
+      "@main/*": ["main/*"],
+
+      "@components/*": ["renderer/components/*"],
+      "@views/*": ["renderer/views/*"],
+    }
   },
   "exclude": [
     "node_modules"
