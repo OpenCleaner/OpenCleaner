@@ -22,7 +22,7 @@
     "rebuild-deps": "electron-builder install-app-deps"
   },
   "build": {
-    "publish": "never"
+    "publish": null
   },
   "dependencies": {
     "electron-log": "^2.2.17",
