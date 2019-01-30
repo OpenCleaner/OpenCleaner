@@ -1,25 +1,31 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { ipcRenderer, remote } from 'electron';
-import App from './views/app';
-import './assets/main.css';
+import { ipcRenderer, remote } from "electron";
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
-render(<App />, document.getElementById('app'));
+import "./assets/main.css";
+import App from "./views/app";
 
-ipcRenderer.on('go-update', (event: any, info: any) => {
-  let message = `New release available: ${info.version}`;
+// Import fonts
+import "typeface-roboto";
+// import 'material-design-icons';
+
+render(<Router><App /></Router>, document.getElementById("app"));
+
+ipcRenderer.on("go-update", (event: any, info: any) => {
+  const message = `New release available: ${info.version}`;
 
   remote.dialog.showMessageBox(
     {
-      buttons: ['Install', 'Later'],
+      buttons: ["Install", "Later"],
       defaultId: 0,
       detail: message,
       message: `New version of ${remote.app.getName()}`,
-      type: 'question',
+      type: "question",
     },
     (response) => {
       if (response === 0) {
-        setTimeout(() => ipcRenderer.send('ask-quitAndInstall'), 1);
+        setTimeout(() => ipcRenderer.send("ask-quitAndInstall"), 1);
       }
     },
   );

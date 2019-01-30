@@ -1,0 +1,8 @@
+{
+    "extends": ["tslint:latest", "tslint-react"],
+    "rules": {
+      "no-implicit-dependencies": false,
+      "ordered-imports": false,
+      "no-submodule-imports": false
+    }
+  }
