@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   withStyles,
   WithStyles,
   Theme,
   createStyles,
-} from "@material-ui/core/styles";
-import "./styles.scss";
+} from '@material-ui/core/styles';
+import './styles.scss';
 
 const styles = ({  }: Theme) =>
   createStyles({
     root: {
-      textAlign: "center",
+      textAlign: 'center',
     },
   });
 

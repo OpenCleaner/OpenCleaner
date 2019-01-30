@@ -21,7 +21,9 @@
     "build": "yarn clean && yarn electron-webpack && electron-builder",
     "rebuild-deps": "electron-builder install-app-deps"
   },
-  "build": {},
+  "build": {
+    "publish": "never"
+  },
   "dependencies": {
     "electron-log": "^2.2.17",
     "electron-updater": "^4.0.6",
