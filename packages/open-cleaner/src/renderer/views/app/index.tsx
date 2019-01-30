@@ -2,8 +2,8 @@ import React from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Route } from "react-router";
-import Home from "../Home";
-import About from "../About";
+import Home from "../home";
+import About from "../about";
 
 import "./styles.scss";
 
